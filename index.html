@@ -3,879 +3,615 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Shaw's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Shinde | ML Engineer</title>
+  <meta name="description" content="ML/AI Engineer with 2+ years building production RAG pipelines, agentic AI, and end-to-end ML systems. Based in Dublin, Ireland. Stamp 1G - no sponsorship required.">
+  <meta name="keywords" content="ML Engineer, AI Engineer, RAG, LLM, PyTorch, AWS, Dublin, Ireland">
 
-  <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-  <link href="#" rel="apple-touch-icon">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
+
+  <!-- AOS -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- font awesome -->
-
-
-</head>
+</head
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid
-            rounded-circle">
-        <h1 class="text-light"><a href="index.html">Saurabh Shinde</a></h1>
-        <div class="social-links mt-3 text-center">
-          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-          <a href="https://github.com/saurabh-028" class="facebook"><i class="bx bxl-github"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="mailto: saurabhshinde028@gmail.com" class="google-plus"><i class="bx bxl-gmail"></i></a>
-          <a href="https://www.linkedin.com/in/saurabh-shinde-2022-sms/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx
-                  bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx
-                  bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx
-                  bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx
-                  bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx
-                  bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx
-                  bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-    <div class="col-lg-6 mt-2">
-      <a href="https://www.hitwebcounter.com" target="_blank">
-        <img
-          src="https://hitwebcounter.com/counter/counter.php?page=8649773&style=0009&nbdigits=4&type=page&initCount=35"
-          title="Free Counter" Alt="web counter" border="0" />
+  <!-- ======= Navbar ======= -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-initials">SS</span>
+        <span class="logo-name">Saurabh Shinde</span>
       </a>
-      <p style="color: #a8a9b4;">Total Views</p>
+      <nav class="nav-links" id="nav-links">
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#" class="btn-cv" id="cv-btn">Download CV</a>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <i class="bi bi-list"></i>
+      </button>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center
-      align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Saurabh Shinde</h1>
-      <p>I'm <span class="typed" data-typed-items="AI Engineer, Data
-            Scientist, Freelancer"></span></p>
-
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="mailto: saurabhshinde028@gmail.com">Hire Me</a>
-        <a href="https://drive.google.com/file/d/1dkwUgmEefBJG5eJFA-1GQrq1QZEcz-iw/view?usp=sharing">Download
-          CV</a>
-      </div>
-
-
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#" class="btn-cv mobile-cv">Download CV</a>
     </div>
+  </header>
 
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Welcome! I'm Saurabh, a passionate data scientist with a strong
-            background in leveraging data to drive
-            insights and solve complex problems. As a firm believer in the
-            power of data, I am dedicated to applying my
-            skills and expertise to make meaningful contributions in the field
-            of data science.
-
-            Education has been instrumental in shaping my journey. I hold a
-            bachelor’s degree in computer engineering
-            from the University of Pune. Additionally, I have pursued
-            specialized training and certifications in data
-            science and related disciplines, enhancing my knowledge and
-            capabilities.
-
-            With 2 years of experience as a freelancer and project coach in
-            the data science realm, I have had the
-            privilege of working on diverse projects that have honed my
-            analytical and problem-solving skills.
-            Proficient in a wide range of technical tools and languages,
-            including Python, SQL, and various data
-            manipulation libraries like pandas and NumPy, I am well-equipped
-            to handle complex data sets and derive
-            actionable conclusions. I have hands-on experience with machine
-            learning frameworks such as TensorFlow and
-            scikit-learn, and I continuously stay updated with the latest
-            advancements in the field.
-
-            Throughout my career, I have developed a keen interest in Machine
-            Learning. Whether it's natural language
-            processing, computer vision, or predictive modeling, I am always
-            eager to explore new methodologies and
-            techniques to push the boundaries of data science.
-
-          </p>
+  <!-- ======= Hero ======= -->
+  <section id="home" class="hero">
+    <div class="hero-container hero-center">
+      <div class="hero-text" data-aos="fade-up">
+        <span class="hero-badge">
+          <span class="badge-dot"></span>
+          Stamp 1G · Authorised to work in Ireland
+        </span>
+        <h1 class="hero-headline">I engineer AI<br>that works in the real world</h1>
+        <p class="hero-sub">
+          Saurabh Shinde | 2+ years shipping production AI at Capgemini. RAG pipelines,
+          agentic architectures, and end-to-end ML systems. MSc AI (Dublin Business School).
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#" class="btn-secondary" id="cv-hero">
+            <i class="bi bi-download"></i> Download CV
+          </a>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="150">
+        <div class="stat-card">
+          <span class="stat-number">30%</span>
+          <span class="stat-label">Faster Deployments at Capgemini</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Hit@5 1.0</span>
+          <span class="stat-label">Legal RAG Retrieval · ShastraShaw</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">88%</span>
+          <span class="stat-label">RL Success Rate · DroneNavRL</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Stamp 1G</span>
+          <span class="stat-label">No Sponsorship Required</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Featured Project: ShastraShaw ======= -->
+  <section id="featured" class="featured-section section-alt">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Live Project</span>
+        <h2 class="section-title">A Multilingual Legal AI Platform, Running Live</h2>
+        <p class="section-sub">Built end-to-end - RAG pipeline, multilingual NLP, FAISS vector search, and containerised deployment. MSc Dissertation project.</p>
+      </div>
+
+      <div class="featured-card" data-aos="fade-up">
+        <div class="featured-card-inner">
+          <div class="featured-icon-wrap">
+            <i class="bi bi-book"></i>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>AI Engineer, Data Scientist &amp; Data Analyst</h3>
-            <p class="fst-italic">
-              “Torture the data, and it will confess to anything.” -Ronald
-              Coase
+          <div class="featured-info">
+            <h3 class="featured-title">ShastraShaw</h3>
+            <p class="featured-desc">
+              Production RAG pipeline indexing 2,194 legal document chunks across criminal, traffic, rental, and
+              matrimonial law using FAISS + InLegalBERT. Supports English, Hindi, and Marathi. Validated by 20
+              legal professionals (3.94/5.0). Hit@5 of 1.0, MRR 0.955.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
-                    <span>20/08/2000</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                    <span>mr-shaw.netlify.app/</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                    <span>Nashik, Maharashtra</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                    <span>BE Computerss</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>saurabhshinde028@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                    <span>Available</span>
-                  </li>
-                </ul>
-              </div>
+            <div class="featured-tags">
+              <span class="tag">FAISS</span>
+              <span class="tag">InLegalBERT</span>
+              <span class="tag">GPT-4o</span>
+              <span class="tag">RAG</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS S3</span>
+              <span class="tag">MarianMT</span>
+              <span class="tag">RAGAS</span>
             </div>
-            <p>
-              When I'm not diving into data, you can find me swimming, playing
-              cricket or chess, travelling which
-              provide
-              me with a well-rounded perspective and help fuel my creativity
-              and problem-solving abilities.
-              Thank you for visiting my portfolio, and I invite you to explore
-              my showcased projects that demonstrate my
-              expertise and passion for data science. If you have any
-              questions or would like to collaborate, please
-              feel
-              free to reach out!
-            </p>
+          </div>
+          <div class="featured-actions">
+            <a href="https://shastrashaw.online" target="_blank" class="btn-primary">Explore Platform</a>
+            <a href="https://github.com/saurabh-028" target="_blank" class="btn-outline">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Projects ======= -->
+  <section id="projects" class="projects-section section-alt">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">End-to-end ML and AI systems built from research to production</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- AriseAI -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-purple"><i class="bi bi-chat-dots"></i></div>
+              <span class="project-type">RAG · LLM</span>
+            </div>
+            <h3 class="project-title">AriseAI – Gita Assistant</h3>
+            <p class="project-desc">RAG pipeline over 700 Bhagavad Gita verses using MiniLM Sentence Transformers, FAISS, and Gemma LLM. Deployed on Streamlit with grounded, cited responses.</p>
+            <div class="project-tags">
+              <span class="tag">FAISS</span>
+              <span class="tag">Gemma</span>
+              <span class="tag">MiniLM</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">RAG</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- SmartAQ -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-teal"><i class="bi bi-cloud-fog2"></i></div>
+              <span class="project-type">MLOps · Deep Learning</span>
+            </div>
+            <h3 class="project-title">SmartAQ – Air Quality Forecasting</h3>
+            <p class="project-desc">Hybrid LSTM + LightGBM for multi-city air quality forecasting. Full MLOps pipeline on AWS (SageMaker, Step Functions) with drift monitoring. Cut RMSE by 15%.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">LightGBM</span>
+              <span class="tag">AWS</span>
+              <span class="tag">DVC</span>
+              <span class="tag">Docker</span>
+              <span class="tag">MLflow</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Nanoparticle Synthesis Recommender -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-amber"><i class="bi bi-brilliance"></i></div>
+              <span class="project-type">ML · Recommender</span>
+            </div>
+            <h3 class="project-title">Nanoparticle Synthesis Recommender</h3>
+            <p class="project-desc">KNN + cosine similarity system to recommend laser scan-speed and fluence settings targeting desired DLS particle size and UV-Vis absorbance. Streamlit UI for researchers.</p>
+            <div class="project-tags">
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">KNN</span>
+              <span class="tag">Cosine Similarity</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- DroneNavRL -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-blue"><i class="bi bi-airplane"></i></div>
+              <span class="project-type">Reinforcement Learning</span>
+            </div>
+            <h3 class="project-title">DroneNavRL</h3>
+            <p class="project-desc">Custom OpenAI Gym environment for obstacle-aware drone navigation. Benchmarked DQN and PPO agents - 88% success rate with PPO via curriculum learning and reward shaping.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenAI Gym</span>
+              <span class="tag">PPO</span>
+              <span class="tag">DQN</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Power Shift -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-green"><i class="bi bi-lightning-charge"></i></div>
+              <span class="project-type">Data Analysis</span>
+            </div>
+            <h3 class="project-title">Power Shift – EU Energy</h3>
+            <p class="project-desc">Exploratory analysis and forecasting of Eurostat energy balances. Cleaned and modelled Ireland's energy trends in the EU context with visual narratives and time-series forecasting.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Time Series</span>
+              <span class="tag">Eurostat</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Sales Dashboard -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-body">
+            <div class="project-icon-row">
+              <div class="project-icon-wrap icon-rose"><i class="bi bi-bar-chart-line"></i></div>
+              <span class="project-type">Data Analysis · BI</span>
+            </div>
+            <h3 class="project-title">Sales Dashboard</h3>
+            <p class="project-desc">Interactive Power BI dashboard for sales KPIs, margin analysis, and cohort drill-downs. Parameterized views built for non-technical stakeholders with automated data refresh.</p>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- ======= Facts Section ======= -->
-    <!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Mastering the art of data science to extract meaningful insights
-            and drive informed decision-making.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Machine Learning<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Microsoft Azure<i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">HTML/CSS<i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Deep Learning <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Flask <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Problem Solving <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Tableau <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Bootstrap <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+  <!-- ======= Experience & Education ======= -->
+  <section id="experience" class="experience-section">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">Experience & Education</h2>
       </div>
-    </section><!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
+      <div class="exp-edu-layout">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Unveiling a Career Journey of Impact and Growth</p>
+        <!-- Left column: Work Auth + Education + Certs -->
+        <div class="edu-sidebar" data-aos="fade-up">
+
+          <div class="sidebar-block">
+            <h4 class="sidebar-label"><i class="bi bi-shield-check"></i> Work Authorisation</h4>
+            <div class="sidebar-card">
+              <span class="stamp-badge">Stamp 1G</span>
+              <p class="sidebar-text">Eligible to work full-time in Ireland without employer sponsorship.</p>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <h4 class="sidebar-label"><i class="bi bi-mortarboard"></i> Education</h4>
+            <div class="sidebar-card">
+              <h5 class="edu-degree">MSc Artificial Intelligence</h5>
+              <p class="edu-school">Dublin Business School, Ireland</p>
+              <span class="edu-period">Jan 2025 – May 2026</span>
+            </div>
+            <div class="sidebar-card">
+              <h5 class="edu-degree">B.E. Computer Engineering</h5>
+              <p class="edu-school">Sapkal College of Engineering, Nashik</p>
+              <span class="edu-period">Aug 2018 – Jul 2022 · 8.46 / 10 CGPA</span>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <h4 class="sidebar-label"><i class="bi bi-award"></i> Certifications</h4>
+            <div class="sidebar-card">
+              <p class="cert-item">AWS Certified ML Engineer – Associate</p>
+              <p class="cert-item">Master's Program in AI Engineering - Simplilearn × IBM</p>
+              <p class="cert-item">MLOps Foundations - iNeuron</p>
+              <p class="cert-item">Python for Data Science - IBM</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Training And certifications</h3>
-            <div class="resume-item pb-0">
-              <h4>Master’s Program - Artificial Intelligence Engineer</h4>
-              <p>-Simplilearn Certified in collaboration with IBM</p>
-              <h5>Mar 2021 - Aug 2022</h5>
-              <p><a href="https://success.simplilearn.com/45820daf-641b-46d0-9477-3ba31ebadfec#gs.0wvk46">View
-                  Certificate</a></p>
-              <ul>
-                <li>Introduction to Artificial Intelligence</li>
-                <li>Data Science with Python</li>
-                <li>Machine Learning Advanced Certification Training</li>
-                <li>Advanced Deep Learning and Computer Vision</li>
-                <li>AI Capstone Project</li>
-                <li>Natural Language Processing</li>
-                <li>Industry Master Class – Artificial Intelligence</li>
-                <li>Math Refresher</li>
-                <li>Statistics Essential for Data Science</li>
-              </ul>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>2021 Python Bootcamp from zero to hero</h4>
-              <p>-Udemy</p>
-              <p><a href="https://drive.google.com/file/d/1gGMIeAwvTdgKv-wCQ_ra3fqw62-Grie2/view" target="_blank">View
-                  Certificate</a>
-              </p>
+        <!-- Right column: Professional Experience -->
+        <div class="exp-timeline" data-aos="fade-up" data-aos-delay="100">
 
-            </div>
+          <h4 class="timeline-label">Professional Experience</h4>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science in Artificial Intelligence</h4>
-              <h5>2025 - 2028</h5>
-              <p><em>DUBLIN BUSINESS SCHOOL</em></p>
-              <!-- <p>CGPA: 8.59</p> -->
-            </div>
-            <div class="resume-item">
-              <h4>bachelor’s in Computer engineering</h4>
-              <h5>2018 - 2022</h5>
-              <p><em>Sapkal College of Engineering, nashik</em></p>
-              <p>CGPA: 8.59</p>
-            </div>
-            <div class="resume-item">
-              <h4>Class XII - PCM</h4>
-              <h5>2016 - 2018</h5>
-              <p><em>Enzo-chem Highschool, Yeola, Nashik</em></p>
-              <p>Percentage: 71.69</p>
-            </div>
-            <!-- <div class="resume-item">
-              <h4>Class X</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>LDP Highschool, Lasalgaon, Nashik</em></p>
-              <p>Percentage: 86.60</p>
-            </div> -->
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience and Internship</h3>
-            <div class="resume-item">
-              <h4>Graduate AI Engineer</h4>
-              <h5>DEC 2022 – DEC 2024</h5>
-              <p><em>Capgemini, Navi Mumbai </em></p>
-              <ul>
-                <li>Designed and deployed end-to-end ML pipelines, boosting deployment efficiency by 30% with Docker,
-                  DVC, and GitHub Actions.</li>
-                <li>Integrated LLM and NLP solutions into production, reducing manual workloads by 20%.</li>
-                <li>Built monitoring pipelines for model drift and performance tracking, ensuring high system
-                  reliability.</li>
-                <li>Optimized models via hyperparameter tuning and transfer learning, improving accuracy by 15% and
-                  reducing training time by 25%.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Computer Technician & Data Analyst (Part-time) </h4>
-              <h5>APR 2021 – DEC 2021</h5>
-              <p><em>Matoshri Institute of Pharmacy</em></p>
-              <ul>
-                <li> Analyzed admission data to identify target regions and support data-driven marketing campaigns.
-                </li>
-                <li> Built predictive models to measure the impact of promotional efforts on student enrollment.</li>
-                <li> Maintained IT infrastructure by repairing PCs, troubleshooting networks, and updating the college
-                  website.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Science Intern (Remote)</h4>
-              <h5>Jan 2022 - March 2022</h5>
-              <p><em>Microsoft Future ready Talent</em></p>
-              <ul>
-                <li>Main Objective: Predict weather the person can claim an
-                  insurance or not. </li>
-                <li>Built a ML model which can
-                  classify if the person can claim insurance or not and
-                  deployed as a web-app on Microsoft Azure. </li>
-                <li>Tools used : Python Programming, Flask, web designing, MS
-                  Azure.</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section (FINAL) ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Here, you can see my projects and work</p>
-        </div>
-
-        <!-- Centered, horizontally scrollable filter "slider" -->
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12">
-            <div class="filter-slider">
-              <ul id="portfolio-flters" class="chips">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">ML &amp; DL</li>
-                <li data-filter=".filter-card">Data Analysis</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <!-- ===== Cards (link directly to GitHub; images are placeholders) ===== -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Multilingual Legal Assistant (RAG)"
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect fill='%23e9eef5' width='100%%' height='100%%'/><text x='50%%' y='50%%' text-anchor='middle' dominant-baseline='middle' font-size='18' fill='%238aa'>Image coming soon</text></svg>">
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Multilingual Legal Assistant (RAG)</h4>
-                <details class="portfolio-desc">
-                  <summary>Bilingual RAG system for Maharashtra laws using FAISS &amp; LegalBERT/XLM-R.</summary>
-                  <div class="more">
-                    End-to-end pipeline for legal queries with retrieval, ranking and grounded responses.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
+          <!-- Capgemini -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Graduate AI/ML Engineer</h3>
+                <p class="exp-company">Capgemini</p>
               </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
+              <div class="exp-meta-inline">
+                <span class="exp-period">Dec 2022 – Dec 2024</span>
+                <span class="exp-location">Navi Mumbai, India</span>
               </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built and shipped ML/LLM-powered features across the full stack - data pipelines, model serving, and operational tooling - cutting deployment time by <strong>30%</strong> through Docker, DVC, MLflow, and GitHub Actions CI/CD.</li>
+              <li>Developed production-grade RAG pipelines integrating LLMs into document analysis workflows, reducing manual workloads by <strong>20%</strong>.</li>
+              <li>Implemented AI agent components automating multi-step operational decision workflows with structured output validation and prompt engineering.</li>
+              <li>Built real-time ML monitoring with drift detection, fairness evaluation, and explainability reporting (SHAP, LIME) for regulatory AI standards.</li>
+              <li>Applied transfer learning (BERT, RoBERTa) for document classification - <strong>15% accuracy improvement</strong>, 25% training time reduction via mixed-precision.</li>
+              <li>Containerised ML services with Docker, deployed on AWS (SageMaker, Lambda, S3, ECS) for batch and real-time inference.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">MLflow</span>
+              <span class="tag">DVC</span>
+              <span class="tag">BERT</span>
+              <span class="tag">SHAP</span>
+              <span class="tag">GitHub Actions</span>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="AriseAI – Gita Assistant"
-                src="assets\img\portfolio\Arise-AI.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">AriseAI – Gita Assistant</h4>
-                <details class="portfolio-desc">
-                  <summary>RAG pipeline (MiniLM + FAISS + Gemma) with cited answers via Streamlit.</summary>
-                  <div class="more">
-                    Retrieval-augmented chatbot that cites verses and commentary with confidence scores.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
+          <!-- Microsoft -->
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Data Science Intern</h3>
+                <p class="exp-company">Future Ready Talent (Microsoft)</p>
               </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
+              <div class="exp-meta-inline">
+                <span class="exp-period">Feb 2022 – Jun 2022</span>
+                <span class="exp-location">Remote</span>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="SmartAQ – Air Quality Forecasting"
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect fill='%23e9eef5' width='100%%' height='100%%'/><text x='50%%' y='50%%' text-anchor='middle' dominant-baseline='middle' font-size='18' fill='%238aa'>Image coming soon</text></svg>">
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">SmartAQ – Air Quality Forecasting</h4>
-                <details class="portfolio-desc">
-                  <summary>Hybrid LSTM + LightGBM with automated MLOps (DVC, Docker, CI/CD).</summary>
-                  <div class="more">
-                    Multi-city PM forecasting with feature pipelines and reproducible training/evaluation.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Nanoparticle Recommender"
-                src="assets\img\portfolio\nanoparticles-synthesize.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Nanoparticle Recommender</h4>
-                <details class="portfolio-desc">
-                  <summary>KNN + cosine similarity for laser settings with Streamlit UI.</summary>
-                  <div class="more">
-                    Suggests scan-speed/fluence settings to hit target DLS size and UV-Vis absorbance.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="DroneNavRL"
-                src="assets\img\portfolio\Drone-RL.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">DroneNavRL</h4>
-                <details class="portfolio-desc">
-                  <summary>Gym env. + PPO/DQN for obstacle-aware drone routing.</summary>
-                  <div class="more">
-                    Custom RL environment with dynamic birds and static no-fly zones for delivery success.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Power Shift – EU Energy"
-                src="assets\img\portfolio\Energy-consuptio-by-cities.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Power Shift – EU Energy</h4>
-                <details class="portfolio-desc">
-                  <summary>Exploratory analysis &amp; forecasting of Eurostat energy balances.</summary>
-                  <div class="more">
-                    Cleaned and modeled Ireland’s energy trends in the EU context; built visual narratives.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Health Insurance Prediction"
-                src="assets\img\portfolio\Insurance-prediction\insurance-details-2.jpg " width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Health Insurance Prediction</h4>
-                <details class="portfolio-desc">
-                  <summary>Binary classifier to predict claim eligibility using Flask/Azure.</summary>
-                  <div class="more">
-                    Built and launched a predictive ML model to assess claim eligibility and deployed a minimal UI for
-                    quick inference.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Sales Prediction"
-                src="assets\img\portfolio\sales-prediction\sales-pred.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Sales Prediction</h4>
-                <details class="portfolio-desc">
-                  <summary>Machine learning model to forecast store sales.</summary>
-                  <div class="more">
-                    Time-series features and tree-based models to predict next-week sales across stores and categories.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Emotion Recognition"
-                src="assets\img\portfolio\emotion-recognition\result-2.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Emotion Recognition</h4>
-                <details class="portfolio-desc">
-                  <summary>Deep learning pipeline for facial emotion classification.</summary>
-                  <div class="more">
-                    CNN-based classifier trained on FER datasets with augmentation and Grad-CAM interpretability.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="Sales Dashboard"
-                src="assets\img\portfolio\sales-prediction\dashboard.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">Sales Dashboard</h4>
-                <details class="portfolio-desc">
-                  <summary>Interactive dashboard to explore KPIs and trends.</summary>
-                  <div class="more">
-                    Power BI dashboard for sales, margin and cohort analysis with parameterized drill-downs.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap portfolio-card">
-              <img class="portfolio-card-img" alt="College Website"
-                src="assets\img\portfolio\mip\mip-1.png" width='640' height='360'>
-              <div class="portfolio-meta">
-                <h4 class="portfolio-card-title">College Website</h4>
-                <details class="portfolio-desc">
-                  <summary>Responsive website revamp for MIP with modern UI.</summary>
-                  <div class="more">
-                    Refactored layouts and components for accessibility and mobile-first performance.
-                    <button type="button" class="desc-less">Show less</button>
-                  </div>
-                </details>
-              </div>
-              <div class="portfolio-links">
-                <a href="https://github.com/saurabh-028" target="_blank" title="View on GitHub"><i
-                    class="bx bxl-github"></i></a>
-              </div>
+            <ul class="exp-bullets">
+              <li>Built and deployed a Flask-based ML web application on Azure for insurance claim eligibility prediction, cutting manual verification effort by <strong>40%</strong>.</li>
+              <li>Designed reproducible model evaluation framework (AUROC, precision-recall) adopted across the intern cohort.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">ML</span>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
-    <!-- End Portfolio Section (FINAL) -->
+    </div>
+  </section>
 
-    <!-- Minimal JS ONLY for the portfolio section -->
-    <script>
-      (function () {
-        function relayout() {
-          try {
-            if (window.jQuery) {
-              var $ = window.jQuery;
-              if ($('.portfolio-container').data('isotope')) {
-                $('.portfolio-container').isotope('layout');
-              }
-            }
-          } catch (e) { /* ignore */ }
-          window.dispatchEvent(new Event('resize'));
-        }
+  <!-- ======= Skills ======= -->
+  <section id="skills" class="skills-section section-alt">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Tools I Use in Production</h2>
+        <p class="section-sub">Grouped by domain. These reflect tools used in production deployments and research, not a wish list.</p>
+      </div>
 
-        // When <details> opens/closes, let layout grow/shrink so cards below move
-        document.querySelectorAll('#portfolio details.portfolio-desc').forEach(function (d) {
-          d.addEventListener('toggle', relayout);
-        });
+      <div class="skills-grid">
 
-        // Put "Show less" at the end of expanded text and close on click
-        document.addEventListener('click', function (e) {
-          if (e.target.classList && e.target.classList.contains('desc-less')) {
-            var det = e.target.closest('details');
-            if (det) det.open = false;
-            relayout();
-          }
-        });
-
-        // Optional: clicking a chip updates active class (works with your existing filtering)
-        var chips = document.querySelectorAll('#portfolio-flters.chips li');
-        chips.forEach(function (chip) {
-          chip.addEventListener('click', function () {
-            chips.forEach(c => c.classList.remove('filter-active'));
-            chip.classList.add('filter-active');
-            relayout();
-          });
-        });
-      })();
-    </script>
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-            <h4 class="title">Data Analysis & Visualization</h4>
-            <p class="description">Provide insights and visualizations by
-              analyzing large datasets, identifying patterns, trends, and
-              correlations. Present data-driven recommendations to drive
-              business decision-making.</p>
+        <div class="skill-domain" data-aos="fade-up">
+          <div class="domain-header">
+            <div class="domain-icon icon-purple"><i class="bi bi-stars"></i></div>
+            <h4 class="domain-title">GenAI & LLMs</h4>
+            <span class="domain-badge">Core</span>
           </div>
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-mortarboard"></i></div>
-            <h4 class="title">Machine Learning Model Development</h4>
-            <p class="description">Build and deploy machine learning models
-              for various applications, such as predictive analytics,
-              classification, regression, and clustering. Develop models using
-              algorithms like random forests, support vector machines, or
-              neural networks.</p>
-          </div>
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-pie-chart"></i></div>
-            <h4 class="title">Predictive Analytics</h4>
-            <p class="description">Utilize historical data to develop
-              predictive models that forecast future outcomes or behavior.
-              Apply statistical techniques and machine learning algorithms to
-              generate accurate predictions for business planning and
-              optimization.</p>
-          </div>
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-translate"></i></div>
-            <h4 class="title">Natural Language Processing</h4>
-            <p class="description">Develop NLP solutions to extract insights
-              and meaning from text data. This includes sentiment analysis,
-              text classification, named entity recognition, language
-              generation, and text summarization.</p>
+          <div class="skill-tags">
+            <span class="tag tag-core">GPT-4o</span>
+            <span class="tag tag-core">LangChain</span>
+            <span class="tag tag-core">RAG Pipelines</span>
+            <span class="tag tag-core">Agentic Architectures</span>
+            <span class="tag">Gemma</span>
+            <span class="tag">LLaMA</span>
+            <span class="tag">AWS Bedrock</span>
+            <span class="tag">vLLM</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Fine-tuning</span>
           </div>
         </div>
 
+        <div class="skill-domain" data-aos="fade-up" data-aos-delay="50">
+          <div class="domain-header">
+            <div class="domain-icon icon-blue"><i class="bi bi-diagram-3"></i></div>
+            <h4 class="domain-title">ML & Deep Learning</h4>
+            <span class="domain-badge">Core</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">PyTorch</span>
+            <span class="tag tag-core">Scikit-learn</span>
+            <span class="tag tag-core">LightGBM</span>
+            <span class="tag tag-core">XGBoost</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Statistics</span>
+            <span class="tag">Data Mining</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up" data-aos-delay="100">
+          <div class="domain-header">
+            <div class="domain-icon icon-teal"><i class="bi bi-cloud-arrow-up"></i></div>
+            <h4 class="domain-title">MLOps & Cloud</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">SageMaker</span>
+            <span class="tag tag-core">MLflow</span>
+            <span class="tag tag-core">Docker</span>
+            <span class="tag tag-core">GitHub Actions</span>
+            <span class="tag">Lambda</span>
+            <span class="tag">S3</span>
+            <span class="tag">ECS</span>
+            <span class="tag">Step Functions</span>
+            <span class="tag">Bedrock</span>
+            <span class="tag">DVC</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">CloudWatch</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up" data-aos-delay="150">
+          <div class="domain-header">
+            <div class="domain-icon icon-amber"><i class="bi bi-search"></i></div>
+            <h4 class="domain-title">Vector Search & NLP</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">FAISS</span>
+            <span class="tag tag-core">Embedding Models</span>
+            <span class="tag tag-core">Semantic Search</span>
+            <span class="tag">InLegalBERT</span>
+            <span class="tag">MarianMT</span>
+            <span class="tag">Sentence Transformers</span>
+            <span class="tag">NER</span>
+            <span class="tag">Multilingual NLP</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up">
+          <div class="domain-header">
+            <div class="domain-icon icon-rose"><i class="bi bi-code-slash"></i></div>
+            <h4 class="domain-title">Languages</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">Python</span>
+            <span class="tag tag-core">SQL</span>
+            <span class="tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up" data-aos-delay="50">
+          <div class="domain-header">
+            <div class="domain-icon icon-green"><i class="bi bi-boxes"></i></div>
+            <h4 class="domain-title">Frameworks</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">FastAPI</span>
+            <span class="tag tag-core">Flask</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Hugging Face Transformers</span>
+          </div>
+        </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </div>
+  </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>You can reach out to me any time. Let's create something great
-            together.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Dublin, Ireland</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>saurabhshinde028@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+353 899437654</p>
-              </div>
-
-              <iframe src="https://maps.google.com/maps?q=dublin 12&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required="">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required="">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required="">
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank
-                  you!</div>
-              </div>
-              <div class="text-center"><button value=" Send" type="submit">Send
-                  Message</button></div>
-            </form>
-          </div>
-        </div>
+  <!-- ======= Contact ======= -->
+  <section id="contact" class="contact-section section-alt">
+    <div class="section-container">
+      <div class="contact-header" data-aos="fade-up">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Talk</h2>
+        <p class="section-sub">Open to ML Engineer, AI Engineer, and Data Science roles in Ireland.</p>
       </div>
-    </section>
-    <!-- End Contact Section -->
 
-  </main><!-- End #main -->
+      <div class="contact-cards" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="contact-card">
+          <h4 class="contact-card-title">Get in Touch</h4>
+          <ul class="contact-list">
+            <li>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:saurabhshinde028@gmail.com">saurabhshinde028@gmail.com</a>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <span>+353 89 943 7654</span>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>Dublin 12, Ireland</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h4 class="contact-card-title">Links</h4>
+          <ul class="contact-list">
+            <li>
+              <i class="bi bi-github"></i>
+              <a href="https://github.com/saurabh-028" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <i class="bi bi-linkedin"></i>
+              <a href="https://www.linkedin.com/in/saurabh-shinde-2022-sms/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <i class="bi bi-globe"></i>
+              <a href="https://shastrashaw.online" target="_blank">ShastraShaw (Live Project)</a>
+            </li>
+            <li>
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              <a href="#" id="cv-link">Download CV</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h4 class="contact-card-title">Availability</h4>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            <span>Available now</span>
+          </div>
+          <div class="avail-detail">
+            <p class="avail-label">WORK AUTHORISATION</p>
+            <p class="avail-value">Stamp 1G · Authorised to work in Ireland without sponsorship</p>
+          </div>
+          <div class="avail-detail">
+            <p class="avail-label">SEEKING</p>
+            <p class="avail-value">ML Engineer / AI Engineer roles in Ireland</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ======= Footer ======= -->
-  <a href="#" class="back-to-top d-flex align-items-center
-      justify-content-center"><i class="bi bi-arrow-up-short"></i>
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">© 2026 Saurabh Shinde · Dublin, Ireland</p>
+      <div class="footer-links">
+        <a href="https://github.com/saurabh-028" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/saurabh-shinde-2022-sms/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:saurabhshinde028@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
   </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- Scripts -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
