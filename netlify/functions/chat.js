@@ -157,7 +157,7 @@ exports.handler = async function (event) {
       body: JSON.stringify({
         system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
         contents: contents,
-        generationConfig: { temperature: 0.4, maxOutputTokens: 400 },
+        generationConfig: { temperature: 0.4, maxOutputTokens: 800 },
       }),
     });
 
@@ -172,12 +172,12 @@ exports.handler = async function (event) {
     }
 
     const candidate = data && data.candidates && data.candidates[0];
-    const reply =
-      candidate &&
-      candidate.content &&
-      candidate.content.parts &&
-      candidate.content.parts[0] &&
-      candidate.content.parts[0].text;
+    // Gemini can split an answer across multiple `parts` — concatenate all of
+    // them, not just the first, or longer replies get silently truncated.
+    const parts = candidate && candidate.content && candidate.content.parts;
+    const reply = Array.isArray(parts)
+      ? parts.map(function (p) { return (p && typeof p.text === 'string') ? p.text : ''; }).join('').trim()
+      : '';
 
     if (!reply) {
       if (candidate && candidate.finishReason === 'SAFETY') {
