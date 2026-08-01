@@ -141,14 +141,20 @@
   }
 
   /* ── Chat widget ──────────────────────────────
-     Layout/UI only for now — sendMessage() below is a stub.
-     Swap its body for a fetch() to the Netlify Function once wired up. */
+     Talks to the Netlify Function at /api/chat (see netlify/functions/chat.js),
+     which proxies to Gemini with a system prompt grounded in Saurabh's resume. */
   const chatFab      = document.getElementById('chat-fab');
   const chatPanel     = document.getElementById('chat-panel');
   const chatClose     = document.getElementById('chat-close');
   const chatForm      = document.getElementById('chat-form');
   const chatInput     = document.getElementById('chat-input');
+  const chatSendBtn   = document.querySelector('.chat-send');
   const chatMessages  = document.getElementById('chat-messages');
+
+  const CHAT_ENDPOINT = '/api/chat';
+  const CHAT_HISTORY_LIMIT = 16;
+  let chatHistory = [];
+  let chatSending = false;
 
   function openChat() {
     chatPanel.classList.add('open');
@@ -172,12 +178,62 @@
     return bubble;
   }
 
-  // Stub: replace with a fetch() to your Netlify Function + LLM call.
+  function setTyping(show) {
+    let typingEl = document.getElementById('chat-typing');
+    if (show && !typingEl) {
+      typingEl = document.createElement('div');
+      typingEl.id = 'chat-typing';
+      typingEl.className = 'chat-bubble chat-bubble-bot chat-typing';
+      typingEl.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typingEl);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    } else if (!show && typingEl) {
+      typingEl.remove();
+    }
+  }
+
+  function setSending(isSending) {
+    chatSending = isSending;
+    chatInput.disabled = isSending;
+    chatSendBtn.disabled = isSending;
+  }
+
   function sendMessage(text) {
+    if (chatSending || !text) return;
+    setSending(true);
     appendBubble(text, 'user');
-    setTimeout(function () {
-      appendBubble("This is just the UI preview — I'm not connected to a live model yet. Ask Saurabh directly for now!", 'bot');
-    }, 500);
+    setTyping(true);
+
+    fetch(CHAT_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text, history: chatHistory }),
+    })
+      .then(function (res) {
+        return res.json()
+          .catch(function () { return {}; })
+          .then(function (data) { return { ok: res.ok, data: data }; });
+      })
+      .then(function (result) {
+        setTyping(false);
+        if (!result.ok || !result.data || !result.data.reply) {
+          appendBubble((result.data && result.data.error) || 'Something went wrong. Please try again.', 'bot');
+          return;
+        }
+        appendBubble(result.data.reply, 'bot');
+        chatHistory.push({ role: 'user', text: text });
+        chatHistory.push({ role: 'model', text: result.data.reply });
+        if (chatHistory.length > CHAT_HISTORY_LIMIT) {
+          chatHistory = chatHistory.slice(-CHAT_HISTORY_LIMIT);
+        }
+      })
+      .catch(function () {
+        setTyping(false);
+        appendBubble("Couldn't reach the server. Please check your connection and try again.", 'bot');
+      })
+      .finally(function () {
+        setSending(false);
+      });
   }
 
   if (chatFab && chatPanel) {
@@ -213,6 +269,7 @@
 
     chatForm.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (chatSending) return;
       const text = chatInput.value.trim();
       if (!text) return;
       chatInput.value = '';
