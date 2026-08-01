@@ -5,9 +5,11 @@
 // Requires an environment variable set in Netlify (Site settings > Environment
 // variables), never committed to the repo:
 //   GEMINI_API_KEY   — your Google AI Studio API key
-//   GEMINI_MODEL     — optional, defaults to "gemini-2.5-flash"
+//   GEMINI_MODEL     — optional, defaults to "gemini-flash-latest" (a rolling
+//                      alias Google points at their current flash model, so
+//                      this doesn't need updating every time a version sunsets)
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-flash-latest';
 const MAX_MESSAGE_LENGTH = 600;
 const MAX_HISTORY_TURNS = 8;
 
