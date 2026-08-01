@@ -140,4 +140,84 @@
     requestAnimationFrame(tick);
   }
 
+  /* ── Chat widget ──────────────────────────────
+     Layout/UI only for now — sendMessage() below is a stub.
+     Swap its body for a fetch() to the Netlify Function once wired up. */
+  const chatFab      = document.getElementById('chat-fab');
+  const chatPanel     = document.getElementById('chat-panel');
+  const chatClose     = document.getElementById('chat-close');
+  const chatForm      = document.getElementById('chat-form');
+  const chatInput     = document.getElementById('chat-input');
+  const chatMessages  = document.getElementById('chat-messages');
+
+  function openChat() {
+    chatPanel.classList.add('open');
+    chatFab.setAttribute('aria-expanded', 'true');
+    chatFab.querySelector('i').className = 'bi bi-x-lg';
+    setTimeout(function () { chatInput.focus(); }, 220);
+  }
+
+  function closeChat() {
+    chatPanel.classList.remove('open');
+    chatFab.setAttribute('aria-expanded', 'false');
+    chatFab.querySelector('i').className = 'bi bi-chat-dots-fill';
+  }
+
+  function appendBubble(text, role) {
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble chat-bubble-' + role;
+    bubble.textContent = text;
+    chatMessages.appendChild(bubble);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    return bubble;
+  }
+
+  // Stub: replace with a fetch() to your Netlify Function + LLM call.
+  function sendMessage(text) {
+    appendBubble(text, 'user');
+    setTimeout(function () {
+      appendBubble("This is just the UI preview — I'm not connected to a live model yet. Ask Saurabh directly for now!", 'bot');
+    }, 500);
+  }
+
+  if (chatFab && chatPanel) {
+    chatFab.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (chatPanel.classList.contains('open')) {
+        closeChat();
+      } else {
+        openChat();
+      }
+    });
+
+    chatClose.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeChat();
+    });
+
+    document.addEventListener('click', function (e) {
+      if (
+        chatPanel.classList.contains('open') &&
+        !chatPanel.contains(e.target) &&
+        !chatFab.contains(e.target)
+      ) {
+        closeChat();
+      }
+    });
+
+    document.querySelectorAll('.chat-chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        sendMessage(chip.getAttribute('data-prompt') || chip.textContent);
+      });
+    });
+
+    chatForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const text = chatInput.value.trim();
+      if (!text) return;
+      chatInput.value = '';
+      sendMessage(text);
+    });
+  }
+
 })();

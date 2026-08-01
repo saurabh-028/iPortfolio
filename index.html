@@ -588,6 +588,43 @@
     <i class="bi bi-arrow-up"></i>
   </a>
 
+  <!-- ======= Chat Widget ======= -->
+  <div class="chat-widget">
+    <button class="chat-fab" id="chat-fab" aria-label="Ask about Saurabh" aria-expanded="false">
+      <i class="bi bi-chat-dots-fill"></i>
+    </button>
+
+    <div class="chat-panel" id="chat-panel" role="dialog" aria-label="Chat with Saurabh's AI assistant">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <span class="chat-avatar"><i class="bi bi-stars"></i></span>
+          <div>
+            <h4 class="chat-title">Ask about Saurabh</h4>
+            <span class="chat-subtitle"><span class="badge-dot"></span> AI Assistant</span>
+          </div>
+        </div>
+        <button class="chat-close" id="chat-close" aria-label="Close chat"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-bubble chat-bubble-bot">
+          Hi, I'm an AI assistant trained on Saurabh's résumé, projects, and skills. Ask me anything —
+          his experience with RAG pipelines, his tech stack, or whether he needs visa sponsorship.
+        </div>
+        <div class="chat-quick-replies">
+          <button type="button" class="chat-chip" data-prompt="What's his experience with RAG pipelines?">RAG experience?</button>
+          <button type="button" class="chat-chip" data-prompt="Does he need visa sponsorship?">Visa status?</button>
+          <button type="button" class="chat-chip" data-prompt="What's his tech stack?">Tech stack?</button>
+        </div>
+      </div>
+
+      <form class="chat-input-row" id="chat-form">
+        <input type="text" class="chat-input" id="chat-input" placeholder="Ask a question…" autocomplete="off">
+        <button type="submit" class="chat-send" aria-label="Send message"><i class="bi bi-send-fill"></i></button>
+      </form>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/js/main.js"></script>
