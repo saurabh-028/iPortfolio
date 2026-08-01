@@ -65,7 +65,8 @@
   const mobileMenu   = document.getElementById('mobile-menu');
 
   if (mobileToggle && mobileMenu) {
-    mobileToggle.addEventListener('click', function () {
+    mobileToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       const isOpen = mobileMenu.classList.toggle('open');
       mobileToggle.querySelector('i').className = isOpen
         ? 'bi bi-x'

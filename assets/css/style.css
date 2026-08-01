@@ -126,10 +126,14 @@ img { max-width: 100%; display: block; }
 .mobile-toggle {
   display: none; background: none; border: 1px solid var(--border); border-radius: 6px;
   padding: 5px 9px; cursor: pointer; font-size: 1.15rem; color: var(--text-primary); line-height: 1;
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
 }
 .mobile-menu {
   display: none; flex-direction: column; padding: 10px 24px 14px;
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 999;
   border-top: 1px solid var(--border); gap: 3px; background: var(--bg);
+  box-shadow: var(--shadow-md); max-height: calc(100vh - var(--nav-height));
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
 }
 .mobile-menu.open { display: flex; }
 .mobile-link {
