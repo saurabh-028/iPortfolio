@@ -8,10 +8,10 @@
   <meta name="description" content="ML/AI Engineer with 3+ years building production RAG pipelines, agentic AI, and end-to-end ML systems. Based in Dublin, Ireland. Stamp 1G - no sponsorship required.">
   <meta name="keywords" content="ML Engineer, AI Engineer, RAG, LLM, PyTorch, AWS, Dublin, Ireland">
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (accents) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 
   <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-</head
+</head>
 
 <body>
 
@@ -33,11 +33,11 @@
         <span class="logo-name">Saurabh Shinde</span>
       </a>
       <nav class="nav-links" id="nav-links">
-        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#projects" class="nav-item">Work</a>
         <a href="#experience" class="nav-item">Experience</a>
         <a href="#skills" class="nav-item">Skills</a>
         <a href="#contact" class="nav-item">Contact</a>
-        <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" class="btn-cv" id="cv-btn" target="_blank" rel="noopener">Download CV</a>
+        <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" class="btn-cv" id="cv-btn" target="_blank" rel="noopener">Résumé</a>
       </nav>
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
         <i class="bi bi-list"></i>
@@ -45,49 +45,52 @@
     </div>
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#projects" class="mobile-link">Work</a>
       <a href="#experience" class="mobile-link">Experience</a>
       <a href="#skills" class="mobile-link">Skills</a>
       <a href="#contact" class="mobile-link">Contact</a>
-      <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" class="btn-cv mobile-cv" target="_blank" rel="noopener">Download CV</a>
+      <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" class="btn-cv mobile-cv" target="_blank" rel="noopener">Résumé</a>
     </div>
   </header>
 
   <!-- ======= Hero ======= -->
   <section id="home" class="hero">
-    <div class="hero-container hero-center">
-      <div class="hero-text" data-aos="fade-up">
+    <div class="hero-container">
+      <div class="hero-text">
         <span class="hero-badge">
           <span class="badge-dot"></span>
           Stamp 1G · Authorised to work in Ireland
         </span>
-        <h1 class="hero-headline">I engineer AI<br>that works in the real world</h1>
+        <h1 class="hero-headline">I engineer AI<br>that <span class="ink-accent">ships.</span></h1>
         <p class="hero-sub">
-          Saurabh Shinde | 3+ years shipping production AI across Capgemini and Qriocity. RAG pipelines,
+          3+ years shipping production AI across Capgemini and Qriocity. RAG pipelines,
           agentic architectures, and end-to-end ML systems. MSc AI (Dublin Business School).
         </p>
         <div class="hero-ctas">
-          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#projects" class="btn-primary">View Work</a>
           <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" class="btn-secondary" id="cv-hero" target="_blank" rel="noopener">
-            <i class="bi bi-download"></i> Download CV
+            <i class="bi bi-download"></i> Résumé
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="hero-stats" data-aos="fade-up" data-aos-delay="150">
-        <div class="stat-card">
-          <span class="stat-number">30%</span>
+    <!-- Stat bar -->
+    <div class="stat-bar">
+      <div class="section-container stat-bar-inner">
+        <div class="stat-cell">
+          <span class="stat-number" data-count="30" data-suffix="%">30%</span>
           <span class="stat-label">Faster Deployments at Capgemini</span>
         </div>
-        <div class="stat-card">
+        <div class="stat-cell">
           <span class="stat-number">Hit@5 1.0</span>
           <span class="stat-label">Legal RAG Retrieval · ShastraShaw</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-number">88%</span>
+        <div class="stat-cell">
+          <span class="stat-number" data-count="88" data-suffix="%">88%</span>
           <span class="stat-label">RL Success Rate · DroneNavRL</span>
         </div>
-        <div class="stat-card">
+        <div class="stat-cell">
           <span class="stat-number">Stamp 1G</span>
           <span class="stat-label">No Sponsorship Required</span>
         </div>
@@ -96,21 +99,17 @@
   </section>
 
   <!-- ======= Featured Project: ShastraShaw ======= -->
-  <section id="featured" class="featured-section section-alt">
+  <section id="featured" class="featured-section">
     <div class="section-container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Live Project</span>
-        <h2 class="section-title">A Multilingual Legal AI Platform, Running Live</h2>
-        <p class="section-sub">Built end-to-end - RAG pipeline, multilingual NLP, FAISS vector search, and containerised deployment. MSc Dissertation project.</p>
-      </div>
-
       <div class="featured-card" data-aos="fade-up">
         <div class="featured-card-inner">
-          <div class="featured-icon-wrap">
-            <i class="bi bi-book"></i>
-          </div>
           <div class="featured-info">
+            <div class="featured-eyebrow">
+              <span class="index-num">01</span>
+              <span class="live-pill"><span class="badge-dot"></span> Live Project</span>
+            </div>
             <h3 class="featured-title">ShastraShaw</h3>
+            <p class="featured-tagline">A multilingual legal AI platform, running live at shastrashaw.online</p>
             <p class="featured-desc">
               Production RAG pipeline indexing 2,194 legal document chunks across criminal, traffic, rental, and
               matrimonial law using FAISS + InLegalBERT. Supports English, Hindi, and Marathi. Validated by 20
@@ -128,38 +127,39 @@
               <span class="tag">MarianMT</span>
               <span class="tag">RAGAS</span>
             </div>
-          </div>
-          <div class="featured-actions">
-            <a href="https://shastrashaw.online" target="_blank" class="btn-primary">Explore Platform</a>
-            <a href="https://github.com/saurabh-028/rag-indian-law" target="_blank" class="btn-outline">
-              <i class="bi bi-github"></i> GitHub
-            </a>
+            <div class="featured-actions">
+              <a href="https://shastrashaw.online" target="_blank" class="btn-primary">Explore Platform</a>
+              <a href="https://github.com/saurabh-028/rag-indian-law" target="_blank" class="btn-outline">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======= Projects ======= -->
-  <section id="projects" class="projects-section section-alt">
+  <!-- ======= Projects (Index) ======= -->
+  <section id="projects" class="projects-section">
     <div class="section-container">
       <div class="section-header" data-aos="fade-up">
-        <h2 class="section-title">Projects</h2>
+        <span class="section-tag">Index / 02</span>
+        <h2 class="section-title">Selected Work</h2>
         <p class="section-sub">End-to-end ML and AI systems built from research to production</p>
       </div>
 
-      <div class="projects-grid">
+      <div class="index-list">
 
         <!-- AriseAI -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-purple"><i class="bi bi-chat-dots"></i></div>
+        <a href="https://github.com/saurabh-028/AriseAI-RAG-Powered-Conversational-Assistant-for-the-Bhagavad-Gita" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">01</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">AriseAI – Gita Assistant</h3>
               <span class="project-type">RAG · LLM</span>
             </div>
-            <h3 class="project-title">AriseAI – Gita Assistant</h3>
-            <p class="project-desc">RAG pipeline over 700 Bhagavad Gita verses using MiniLM Sentence Transformers, FAISS, and Gemma LLM. Deployed on Streamlit with grounded, cited responses.</p>
-            <div class="project-tags">
+            <p class="index-desc">RAG pipeline over 700 Bhagavad Gita verses using MiniLM Sentence Transformers, FAISS, and Gemma LLM. Deployed on Streamlit with grounded, cited responses.</p>
+            <div class="index-tags">
               <span class="tag">FAISS</span>
               <span class="tag">Gemma</span>
               <span class="tag">MiniLM</span>
@@ -167,21 +167,19 @@
               <span class="tag">RAG</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028/AriseAI-RAG-Powered-Conversational-Assistant-for-the-Bhagavad-Gita" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
         <!-- SmartAQ -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="50">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-teal"><i class="bi bi-cloud-fog2"></i></div>
+        <a href="https://github.com/saurabh-028" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">02</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">SmartAQ – Air Quality Forecasting</h3>
               <span class="project-type">MLOps · Deep Learning</span>
             </div>
-            <h3 class="project-title">SmartAQ – Air Quality Forecasting</h3>
-            <p class="project-desc">Hybrid LSTM + LightGBM for multi-city air quality forecasting. Full MLOps pipeline on AWS (SageMaker, Step Functions) with drift monitoring. Cut RMSE by 15%.</p>
-            <div class="project-tags">
+            <p class="index-desc">Hybrid LSTM + LightGBM for multi-city air quality forecasting. Full MLOps pipeline on AWS (SageMaker, Step Functions) with drift monitoring. Cut RMSE by 15%.</p>
+            <div class="index-tags">
               <span class="tag">PyTorch</span>
               <span class="tag">LightGBM</span>
               <span class="tag">AWS</span>
@@ -190,21 +188,19 @@
               <span class="tag">MLflow</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
         <!-- Nanoparticle Synthesis Recommender -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-amber"><i class="bi bi-brilliance"></i></div>
+        <a href="https://github.com/saurabh-028/Nanoparticle-Synthesis-Recommender-System" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">03</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">Nanoparticle Synthesis Recommender</h3>
               <span class="project-type">ML · Recommender</span>
             </div>
-            <h3 class="project-title">Nanoparticle Synthesis Recommender</h3>
-            <p class="project-desc">KNN + cosine similarity system to recommend laser scan-speed and fluence settings targeting desired DLS particle size and UV-Vis absorbance. Streamlit UI for researchers.</p>
-            <div class="project-tags">
+            <p class="index-desc">KNN + cosine similarity system to recommend laser scan-speed and fluence settings targeting desired DLS particle size and UV-Vis absorbance. Streamlit UI for researchers.</p>
+            <div class="index-tags">
               <span class="tag">Scikit-learn</span>
               <span class="tag">KNN</span>
               <span class="tag">Cosine Similarity</span>
@@ -212,21 +208,19 @@
               <span class="tag">Python</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028/Nanoparticle-Synthesis-Recommender-System" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
         <!-- DroneNavRL -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-blue"><i class="bi bi-airplane"></i></div>
+        <a href="https://github.com/saurabh-028/DroneNavRL-Autonomous-Drone-Delivery-Optimization" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">04</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">DroneNavRL</h3>
               <span class="project-type">Reinforcement Learning</span>
             </div>
-            <h3 class="project-title">DroneNavRL</h3>
-            <p class="project-desc">Custom OpenAI Gym environment for obstacle-aware drone navigation. Benchmarked DQN and PPO agents - 88% success rate with PPO via curriculum learning and reward shaping.</p>
-            <div class="project-tags">
+            <p class="index-desc">Custom OpenAI Gym environment for obstacle-aware drone navigation. Benchmarked DQN and PPO agents - 88% success rate with PPO via curriculum learning and reward shaping.</p>
+            <div class="index-tags">
               <span class="tag">PyTorch</span>
               <span class="tag">OpenAI Gym</span>
               <span class="tag">PPO</span>
@@ -234,21 +228,19 @@
               <span class="tag">Python</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028/DroneNavRL-Autonomous-Drone-Delivery-Optimization" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
         <!-- Power Shift -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="50">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-green"><i class="bi bi-lightning-charge"></i></div>
+        <a href="https://github.com/saurabh-028/Power-Shift-Forecasting-and-Analyzing-Irelands-Energy-Future-in-the-EU" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">05</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">Power Shift – EU Energy</h3>
               <span class="project-type">Data Analysis</span>
             </div>
-            <h3 class="project-title">Power Shift – EU Energy</h3>
-            <p class="project-desc">Exploratory analysis and forecasting of Eurostat energy balances. Cleaned and modelled Ireland's energy trends in the EU context with visual narratives and time-series forecasting.</p>
-            <div class="project-tags">
+            <p class="index-desc">Exploratory analysis and forecasting of Eurostat energy balances. Cleaned and modelled Ireland's energy trends in the EU context with visual narratives and time-series forecasting.</p>
+            <div class="index-tags">
               <span class="tag">Python</span>
               <span class="tag">Pandas</span>
               <span class="tag">Matplotlib</span>
@@ -256,21 +248,19 @@
               <span class="tag">Eurostat</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028/Power-Shift-Forecasting-and-Analyzing-Irelands-Energy-Future-in-the-EU" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
         <!-- Sales Dashboard -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-body">
-            <div class="project-icon-row">
-              <div class="project-icon-wrap icon-rose"><i class="bi bi-bar-chart-line"></i></div>
+        <a href="https://github.com/saurabh-028" target="_blank" class="index-row" data-aos="fade-up">
+          <span class="index-num">06</span>
+          <div class="index-body">
+            <div class="index-head">
+              <h3 class="index-title">Sales Dashboard</h3>
               <span class="project-type">Data Analysis · BI</span>
             </div>
-            <h3 class="project-title">Sales Dashboard</h3>
-            <p class="project-desc">Interactive Power BI dashboard for sales KPIs, margin analysis, and cohort drill-downs. Parameterized views built for non-technical stakeholders with automated data refresh.</p>
-            <div class="project-tags">
+            <p class="index-desc">Interactive Power BI dashboard for sales KPIs, margin analysis, and cohort drill-downs. Parameterized views built for non-technical stakeholders with automated data refresh.</p>
+            <div class="index-tags">
               <span class="tag">Power BI</span>
               <span class="tag">SQL</span>
               <span class="tag">Python</span>
@@ -278,10 +268,8 @@
               <span class="tag">Data Analysis</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/saurabh-028" target="_blank" class="project-link"><i class="bi bi-github"></i> GitHub</a>
-          </div>
-        </div>
+          <span class="index-arrow"><i class="bi bi-arrow-up-right"></i></span>
+        </a>
 
       </div>
     </div>
@@ -291,14 +279,101 @@
   <section id="experience" class="experience-section">
     <div class="section-container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Background</span>
-        <h2 class="section-title">Experience & Education</h2>
+        <span class="section-tag">Index / 03</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
       </div>
 
       <div class="exp-edu-layout">
 
-        <!-- Left column: Work Auth + Education + Certs -->
-        <div class="edu-sidebar" data-aos="fade-up">
+        <!-- Left column: Professional Experience -->
+        <div class="exp-timeline" data-aos="fade-up">
+
+          <!-- Capgemini -->
+          <div class="exp-card">
+            <div class="exp-years">Dec 2022<br>— Dec 2024</div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Graduate AI/ML Engineer</h3>
+                  <p class="exp-company">Capgemini · Navi Mumbai, India</p>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built and shipped ML/LLM-powered features across the full stack - data pipelines, model serving, and operational tooling - cutting deployment time by <strong>30%</strong> through Docker, DVC, MLflow, and GitHub Actions CI/CD.</li>
+                <li>Developed production-grade RAG pipelines integrating LLMs into document analysis workflows, reducing manual workloads by <strong>20%</strong>.</li>
+                <li>Implemented AI agent components automating multi-step operational decision workflows with structured output validation and prompt engineering.</li>
+                <li>Built real-time ML monitoring with drift detection, fairness evaluation, and explainability reporting (SHAP, LIME) for regulatory AI standards.</li>
+                <li>Applied transfer learning (BERT, RoBERTa) for document classification - <strong>15% accuracy improvement</strong>, 25% training time reduction via mixed-precision.</li>
+                <li>Containerised ML services with Docker, deployed on AWS (SageMaker, Lambda, S3, ECS) for batch and real-time inference.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+                <span class="tag">MLflow</span>
+                <span class="tag">DVC</span>
+                <span class="tag">BERT</span>
+                <span class="tag">SHAP</span>
+                <span class="tag">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qriocity -->
+          <div class="exp-card">
+            <div class="exp-years">Dec 2021<br>— Dec 2022</div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Junior AI Engineer</h3>
+                  <p class="exp-company">Qriocity · Chennai, India</p>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Developed and deployed supervised ML models (classification and regression) with Python, scikit-learn, and pandas to support an interactive learning platform serving students.</li>
+                <li>Built end-to-end ML pipelines spanning data preparation, feature engineering, hyperparameter tuning, and deployment of production-ready solutions.</li>
+                <li>Applied cross-validation and precision/recall/F1-score evaluation to validate model performance and reduce overfitting.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">ML Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Microsoft -->
+          <div class="exp-card">
+            <div class="exp-years">Feb 2022<br>— Apr 2022</div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Data Science Intern</h3>
+                  <p class="exp-company">Future Ready Talent (Microsoft) · Remote</p>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built and deployed a Flask-based ML web application on Azure for insurance claim eligibility prediction, cutting manual verification effort by <strong>40%</strong>.</li>
+                <li>Designed reproducible model evaluation framework (AUROC, precision-recall) adopted across the intern cohort.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Azure</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">ML</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right column: Work Auth + Education + Certs -->
+        <div class="edu-sidebar" data-aos="fade-up" data-aos-delay="100">
 
           <div class="sidebar-block">
             <h4 class="sidebar-label"><i class="bi bi-shield-check"></i> Work Authorisation</h4>
@@ -333,106 +408,15 @@
           </div>
 
         </div>
-
-        <!-- Right column: Professional Experience -->
-        <div class="exp-timeline" data-aos="fade-up" data-aos-delay="100">
-
-          <h4 class="timeline-label">Professional Experience</h4>
-
-          <!-- Capgemini -->
-          <div class="exp-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Graduate AI/ML Engineer</h3>
-                <p class="exp-company">Capgemini</p>
-              </div>
-              <div class="exp-meta-inline">
-                <span class="exp-period">Dec 2022 – Dec 2024</span>
-                <span class="exp-location">Navi Mumbai, India</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>Built and shipped ML/LLM-powered features across the full stack - data pipelines, model serving, and operational tooling - cutting deployment time by <strong>30%</strong> through Docker, DVC, MLflow, and GitHub Actions CI/CD.</li>
-              <li>Developed production-grade RAG pipelines integrating LLMs into document analysis workflows, reducing manual workloads by <strong>20%</strong>.</li>
-              <li>Implemented AI agent components automating multi-step operational decision workflows with structured output validation and prompt engineering.</li>
-              <li>Built real-time ML monitoring with drift detection, fairness evaluation, and explainability reporting (SHAP, LIME) for regulatory AI standards.</li>
-              <li>Applied transfer learning (BERT, RoBERTa) for document classification - <strong>15% accuracy improvement</strong>, 25% training time reduction via mixed-precision.</li>
-              <li>Containerised ML services with Docker, deployed on AWS (SageMaker, Lambda, S3, ECS) for batch and real-time inference.</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">LangChain</span>
-              <span class="tag">RAG</span>
-              <span class="tag">Docker</span>
-              <span class="tag">AWS</span>
-              <span class="tag">MLflow</span>
-              <span class="tag">DVC</span>
-              <span class="tag">BERT</span>
-              <span class="tag">SHAP</span>
-              <span class="tag">GitHub Actions</span>
-            </div>
-          </div>
-
-          <!-- Qriocity -->
-          <div class="exp-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Junior AI Engineer</h3>
-                <p class="exp-company">Qriocity</p>
-              </div>
-              <div class="exp-meta-inline">
-                <span class="exp-period">Dec 2021 – Dec 2022</span>
-                <span class="exp-location">Chennai, India</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>Developed and deployed supervised ML models (classification and regression) with Python, scikit-learn, and pandas to support an interactive learning platform serving students.</li>
-              <li>Built end-to-end ML pipelines spanning data preparation, feature engineering, hyperparameter tuning, and deployment of production-ready solutions.</li>
-              <li>Applied cross-validation and precision/recall/F1-score evaluation to validate model performance and reduce overfitting.</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">NumPy</span>
-              <span class="tag">ML Pipelines</span>
-            </div>
-          </div>
-
-          <!-- Microsoft -->
-          <div class="exp-card">
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-role">Data Science Intern</h3>
-                <p class="exp-company">Future Ready Talent (Microsoft)</p>
-              </div>
-              <div class="exp-meta-inline">
-                <span class="exp-period">Feb 2022 – Apr 2022</span>
-                <span class="exp-location">Remote</span>
-              </div>
-            </div>
-            <ul class="exp-bullets">
-              <li>Built and deployed a Flask-based ML web application on Azure for insurance claim eligibility prediction, cutting manual verification effort by <strong>40%</strong>.</li>
-              <li>Designed reproducible model evaluation framework (AUROC, precision-recall) adopted across the intern cohort.</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Flask</span>
-              <span class="tag">Azure</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">ML</span>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
   </section>
 
   <!-- ======= Skills ======= -->
-  <section id="skills" class="skills-section section-alt">
+  <section id="skills" class="skills-section">
     <div class="section-container">
       <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Index / 04</span>
         <h2 class="section-title">Tools I Use in Production</h2>
         <p class="section-sub">Grouped by domain. These reflect tools used in production deployments and research, not a wish list.</p>
       </div>
@@ -441,7 +425,7 @@
 
         <div class="skill-domain" data-aos="fade-up">
           <div class="domain-header">
-            <div class="domain-icon icon-purple"><i class="bi bi-stars"></i></div>
+            <div class="domain-icon"><i class="bi bi-stars"></i></div>
             <h4 class="domain-title">GenAI & LLMs</h4>
             <span class="domain-badge">Core</span>
           </div>
@@ -461,7 +445,7 @@
 
         <div class="skill-domain" data-aos="fade-up" data-aos-delay="50">
           <div class="domain-header">
-            <div class="domain-icon icon-blue"><i class="bi bi-diagram-3"></i></div>
+            <div class="domain-icon"><i class="bi bi-diagram-3"></i></div>
             <h4 class="domain-title">ML & Deep Learning</h4>
             <span class="domain-badge">Core</span>
           </div>
@@ -479,7 +463,7 @@
 
         <div class="skill-domain" data-aos="fade-up" data-aos-delay="100">
           <div class="domain-header">
-            <div class="domain-icon icon-teal"><i class="bi bi-cloud-arrow-up"></i></div>
+            <div class="domain-icon"><i class="bi bi-cloud-arrow-up"></i></div>
             <h4 class="domain-title">MLOps & Cloud</h4>
           </div>
           <div class="skill-tags">
@@ -501,7 +485,7 @@
 
         <div class="skill-domain" data-aos="fade-up" data-aos-delay="150">
           <div class="domain-header">
-            <div class="domain-icon icon-amber"><i class="bi bi-search"></i></div>
+            <div class="domain-icon"><i class="bi bi-search"></i></div>
             <h4 class="domain-title">Vector Search & NLP</h4>
           </div>
           <div class="skill-tags">
@@ -518,7 +502,7 @@
 
         <div class="skill-domain" data-aos="fade-up">
           <div class="domain-header">
-            <div class="domain-icon icon-rose"><i class="bi bi-code-slash"></i></div>
+            <div class="domain-icon"><i class="bi bi-code-slash"></i></div>
             <h4 class="domain-title">Languages</h4>
           </div>
           <div class="skill-tags">
@@ -530,7 +514,7 @@
 
         <div class="skill-domain" data-aos="fade-up" data-aos-delay="50">
           <div class="domain-header">
-            <div class="domain-icon icon-green"><i class="bi bi-boxes"></i></div>
+            <div class="domain-icon"><i class="bi bi-boxes"></i></div>
             <h4 class="domain-title">Frameworks</h4>
           </div>
           <div class="skill-tags">
@@ -548,72 +532,41 @@
   </section>
 
   <!-- ======= Contact ======= -->
-  <section id="contact" class="contact-section section-alt">
+  <section id="contact" class="contact-section">
     <div class="section-container">
-      <div class="contact-header" data-aos="fade-up">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">Let's Talk</h2>
+      <div class="contact-panel" data-aos="fade-up">
+        <span class="section-tag">Index / 05</span>
+        <h2 class="contact-headline">Let's build<br>something.</h2>
         <p class="section-sub">Open to ML Engineer, AI Engineer, and Data Science roles in Ireland.</p>
-      </div>
 
-      <div class="contact-cards" data-aos="fade-up" data-aos-delay="100">
+        <a href="mailto:saurabhshinde028@gmail.com" class="contact-email">saurabhshinde028@gmail.com</a>
 
-        <div class="contact-card">
-          <h4 class="contact-card-title">Get in Touch</h4>
-          <ul class="contact-list">
-            <li>
-              <i class="bi bi-envelope"></i>
-              <a href="mailto:saurabhshinde028@gmail.com">saurabhshinde028@gmail.com</a>
-            </li>
-            <li>
-              <i class="bi bi-telephone"></i>
-              <span>+353 89 943 7654</span>
-            </li>
-            <li>
-              <i class="bi bi-geo-alt"></i>
-              <span>Dublin 12, Ireland</span>
-            </li>
-          </ul>
+        <div class="contact-meta-row">
+          <div class="contact-meta-item">
+            <i class="bi bi-telephone"></i>
+            <span>+353 89 943 7654</span>
+          </div>
+          <div class="contact-meta-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Dublin 12, Ireland</span>
+          </div>
+          <div class="contact-meta-item">
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" id="cv-link" target="_blank" rel="noopener">Download CV</a>
+          </div>
         </div>
 
-        <div class="contact-card">
-          <h4 class="contact-card-title">Links</h4>
-          <ul class="contact-list">
-            <li>
-              <i class="bi bi-github"></i>
-              <a href="https://github.com/saurabh-028" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <i class="bi bi-linkedin"></i>
-              <a href="https://www.linkedin.com/in/saurabh-shinde-2022-sms/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-              <i class="bi bi-globe"></i>
-              <a href="https://shastrashaw.online" target="_blank">ShastraShaw (Live Project)</a>
-            </li>
-            <li>
-              <i class="bi bi-file-earmark-arrow-down"></i>
-              <a href="https://drive.google.com/file/d/1faZGzYFWr_hqRIlosmDbO8wcE1Jg_0Yg/view?usp=drive_link" id="cv-link" target="_blank" rel="noopener">Download CV</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="contact-card">
-          <h4 class="contact-card-title">Availability</h4>
+        <div class="contact-foot-row">
           <div class="availability-badge">
             <span class="avail-dot"></span>
             <span>Available now</span>
           </div>
-          <div class="avail-detail">
-            <p class="avail-label">WORK AUTHORISATION</p>
-            <p class="avail-value">Stamp 1G · Authorised to work in Ireland without sponsorship</p>
-          </div>
-          <div class="avail-detail">
-            <p class="avail-label">SEEKING</p>
-            <p class="avail-value">ML Engineer / AI Engineer roles in Ireland</p>
+          <div class="contact-social">
+            <a href="https://github.com/saurabh-028" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/saurabh-shinde-2022-sms/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://shastrashaw.online" target="_blank" aria-label="ShastraShaw"><i class="bi bi-globe"></i></a>
           </div>
         </div>
-
       </div>
     </div>
   </section>

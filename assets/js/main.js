@@ -111,4 +111,33 @@
     });
   });
 
+  /* ── Stat count-up on first view ─────────────── */
+  const countEls = document.querySelectorAll('.stat-number[data-count]');
+  if (countEls.length && 'IntersectionObserver' in window) {
+    const counted = new WeakSet();
+    const counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting || counted.has(entry.target)) return;
+        counted.add(entry.target);
+        animateCount(entry.target);
+      });
+    }, { threshold: 0.4 });
+    countEls.forEach(function (el) { counterObserver.observe(el); });
+  }
+
+  function animateCount(el) {
+    const target = parseFloat(el.getAttribute('data-count'));
+    const suffix = el.getAttribute('data-suffix') || '';
+    const duration = 1100;
+    const start = performance.now();
+
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
 })();
