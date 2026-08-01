@@ -15,6 +15,11 @@
 
   /* ── Navbar: add shadow on scroll ─────────── */
   const navbar = document.getElementById('navbar');
+
+  /* ── Active nav link on scroll ─────────────── */
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-item');
+
   function onScroll() {
     if (window.scrollY > 20) {
       navbar.classList.add('scrolled');
@@ -38,10 +43,6 @@
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll(); // run once on load
-
-  /* ── Active nav link on scroll ─────────────── */
-  const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-item');
 
   function activateNavLink() {
     const scrollPos = window.scrollY + 100;
