@@ -257,9 +257,9 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
 .projects-section { padding: 90px 0; }
 .index-list { border-top: 1px solid var(--line); }
 .index-row {
-  position: relative; display: grid; grid-template-columns: 56px 1fr 40px; align-items: start;
+  position: relative; display: grid; grid-template-columns: 56px 1fr; align-items: start;
   gap: 20px; padding: 30px 16px; border-bottom: 1px solid var(--line);
-  text-decoration: none; color: inherit; transition: background var(--transition), padding-left var(--transition);
+  transition: background var(--transition), padding-left var(--transition);
 }
 .index-row::before {
   content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent);
@@ -267,6 +267,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
 }
 .index-row:hover { background: var(--bg-alt); padding-left: 26px; }
 .index-row:hover::before { transform: scaleY(1); }
+.index-row:hover .index-num { color: var(--accent); }
 .index-row .index-num { font-size: 0.95rem; padding-top: 4px; }
 .index-body { min-width: 0; }
 .index-head { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; }
@@ -277,13 +278,15 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
 }
 .index-desc { font-size: 0.92rem; color: var(--ink-2); line-height: 1.65; margin-bottom: 14px; max-width: 640px; }
 .index-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.index-arrow {
-  display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;
-  border-radius: 50%; border: 1.5px solid var(--line-strong); color: var(--ink-2);
-  transition: all var(--transition); flex-shrink: 0;
+.index-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.index-action {
+  display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono);
+  font-size: 0.78rem; font-weight: 500; color: var(--ink-2); border: 1.5px solid var(--line-strong);
+  border-radius: 999px; padding: 6px 15px; text-decoration: none; transition: all var(--transition);
 }
-.index-row:hover .index-arrow { background: var(--accent); border-color: var(--accent); color: #fff; transform: rotate(45deg); }
-.index-row:hover .index-num { color: var(--accent); }
+.index-action:hover { border-color: var(--ink); color: var(--ink); }
+.index-action-live { color: var(--accent); background: var(--accent-soft); border-color: var(--accent-soft); }
+.index-action-live:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* ===================================================
    EXPERIENCE & EDUCATION
@@ -602,7 +605,6 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
   .featured-card { padding: 30px 22px; }
 
   .index-row { grid-template-columns: 36px 1fr; }
-  .index-arrow { display: none; }
   .index-title { font-size: 1.08rem; }
 
   .exp-edu-layout { grid-template-columns: 1fr; gap: 36px; }
