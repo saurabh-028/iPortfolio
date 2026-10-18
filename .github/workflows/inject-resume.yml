@@ -1,0 +1,32 @@
+name: Inject resume into portfolio
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "data/resume.json"
+      - "scripts/inject-resume.js"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Rebuild experience section
+        run: node scripts/inject-resume.js
+      - name: Commit if changed (Netlify redeploys on the push)
+        run: |
+          git config user.name "resume-sync[bot]"
+          git config user.email "resume-sync[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then echo "No changes."; else
+            git commit -m "chore: sync experience from resume [skip ci]"
+            git push
+          fi
