@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saurabh Shinde | ML Engineer</title>
-  <meta name="description" content="ML/AI Engineer with 3+ years building production RAG pipelines, agentic AI, and end-to-end ML systems. Based in Dublin, Ireland. Stamp 1G - no sponsorship required.">
+  <meta name="description" content="AI Engineer with 4+ years building production RAG pipelines, agentic AI, LLM evaluation, and end-to-end ML systems. Based in Dublin, Ireland.">
   <meta name="keywords" content="ML Engineer, AI Engineer, RAG, LLM, PyTorch, AWS, Dublin, Ireland">
 
   <!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (accents) -->
@@ -59,12 +59,12 @@
       <div class="hero-text">
         <span class="hero-badge">
           <span class="badge-dot"></span>
-          Stamp 1G · Authorised to work in Ireland
+          Open to AI Engineer roles · Dublin, Ireland
         </span>
         <h1 class="hero-headline">I engineer AI<br>that <span class="ink-accent">ships.</span></h1>
         <p class="hero-sub">
-          3+ years shipping production AI across Capgemini and Qriocity. RAG pipelines,
-          agentic architectures, and end-to-end ML systems. MSc AI (Dublin Business School).
+          4+ years shipping production AI across Orcawise, Capgemini and Qriocity. RAG pipelines,
+          agentic architectures, LLM guardrails and evaluation. MSc AI (Dublin Business School).
         </p>
         <div class="hero-ctas">
           <a href="#projects" class="btn-primary">View Work</a>
@@ -83,7 +83,7 @@
           <span class="stat-label">Faster Deployments at Capgemini</span>
         </div>
         <div class="stat-cell">
-          <span class="stat-number">Hit@5 1.0</span>
+          <span class="stat-number">100% Hit@5</span>
           <span class="stat-label">Legal RAG Retrieval · ShastraShaw</span>
         </div>
         <div class="stat-cell">
@@ -91,8 +91,8 @@
           <span class="stat-label">RL Success Rate · DroneNavRL</span>
         </div>
         <div class="stat-cell">
-          <span class="stat-number">Stamp 1G</span>
-          <span class="stat-label">No Sponsorship Required</span>
+          <span class="stat-number">0.33 → 0.88</span>
+          <span class="stat-label">Citation Faithfulness · ShastraShaw</span>
         </div>
       </div>
     </div>
@@ -111,21 +111,25 @@
             <h3 class="featured-title">ShastraShaw</h3>
             <p class="featured-tagline">A multilingual legal AI platform, running live at shastrashaw.online</p>
             <p class="featured-desc">
-              Production RAG pipeline indexing 2,194 legal document chunks across criminal, traffic, rental, and
-              matrimonial law using FAISS + InLegalBERT. Supports English, Hindi, and Marathi. Validated by 20
-              legal professionals (3.94/5.0). Hit@5 of 1.0, MRR 0.955.
+              Production RAG platform giving self-represented citizens grounded legal guidance across criminal,
+              traffic, rental, and matrimonial law, in English, Hindi, and Marathi. A multi-layer guardrail stack
+              (anti-hallucination prompting, cross-encoder reranking, citation verification with auto-retry) lifted
+              automated faithfulness from <strong>0.33 to 0.88</strong> and Hit@5 from <strong>93% to 100%</strong>
+              on a 4-domain benchmark. An LLMOps pipeline (RAGAS plus lawyer-reviewed benchmarking) more than tripled
+              context precision (<strong>0.21 to 0.73</strong>). Run as production infrastructure on AWS with
+              CloudWatch alerting, rate-limiting, and automated backups. Validated by 20 legal professionals (3.94/5.0).
             </p>
             <div class="featured-tags">
               <span class="tag">FAISS</span>
+              <span class="tag">BM25</span>
+              <span class="tag">Cross-Encoder Reranking</span>
               <span class="tag">InLegalBERT</span>
               <span class="tag">GPT-4o</span>
-              <span class="tag">RAG</span>
-              <span class="tag">LangChain</span>
+              <span class="tag">RAGAS</span>
               <span class="tag">FastAPI</span>
               <span class="tag">Docker</span>
-              <span class="tag">AWS S3</span>
-              <span class="tag">MarianMT</span>
-              <span class="tag">RAGAS</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Firebase</span>
             </div>
             <div class="featured-actions">
               <a href="https://shastrashaw.online" target="_blank" class="btn-primary">Explore Platform</a>
@@ -396,14 +400,6 @@
         <div class="edu-sidebar" data-aos="fade-up" data-aos-delay="100">
 
           <div class="sidebar-block">
-            <h4 class="sidebar-label"><i class="bi bi-shield-check"></i> Work Authorisation</h4>
-            <div class="sidebar-card">
-              <span class="stamp-badge">Stamp 1G</span>
-              <p class="sidebar-text">Eligible to work full-time in Ireland without employer sponsorship.</p>
-            </div>
-          </div>
-
-          <div class="sidebar-block">
             <h4 class="sidebar-label"><i class="bi bi-mortarboard"></i> Education</h4>
             <div class="sidebar-card">
               <h5 class="edu-degree">MSc Artificial Intelligence</h5>
@@ -420,7 +416,7 @@
           <div class="sidebar-block">
             <h4 class="sidebar-label"><i class="bi bi-award"></i> Certifications</h4>
             <div class="sidebar-card">
-              <p class="cert-item">AWS Certified ML Engineer – Associate</p>
+              <p class="cert-item">AWS Certified ML Engineer – Associate (Nov 2025)</p>
               <p class="cert-item">Master's Program in AI Engineering - Simplilearn × IBM</p>
               <p class="cert-item">MLOps Foundations - iNeuron</p>
               <p class="cert-item">Python for Data Science - IBM</p>
@@ -454,11 +450,17 @@
             <span class="tag tag-core">LangChain</span>
             <span class="tag tag-core">RAG Pipelines</span>
             <span class="tag tag-core">Agentic Architectures</span>
+            <span class="tag tag-core">LangGraph</span>
             <span class="tag">Gemma</span>
             <span class="tag">LLaMA</span>
             <span class="tag">AWS Bedrock</span>
             <span class="tag">vLLM</span>
             <span class="tag">Prompt Engineering</span>
+            <span class="tag">Tool Calling</span>
+            <span class="tag">MCP</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Azure OpenAI</span>
             <span class="tag">Fine-tuning</span>
           </div>
         </div>
@@ -500,6 +502,8 @@
             <span class="tag">Kubernetes</span>
             <span class="tag">Airflow</span>
             <span class="tag">CloudWatch</span>
+            <span class="tag">GitLab CI</span>
+            <span class="tag">Azure</span>
           </div>
         </div>
 
@@ -512,6 +516,8 @@
             <span class="tag tag-core">FAISS</span>
             <span class="tag tag-core">Embedding Models</span>
             <span class="tag tag-core">Semantic Search</span>
+            <span class="tag tag-core">Hybrid Search (BM25)</span>
+            <span class="tag tag-core">Cross-Encoder Reranking</span>
             <span class="tag">InLegalBERT</span>
             <span class="tag">MarianMT</span>
             <span class="tag">Sentence Transformers</span>
@@ -540,10 +546,49 @@
           <div class="skill-tags">
             <span class="tag tag-core">FastAPI</span>
             <span class="tag tag-core">Flask</span>
+            <span class="tag">Pydantic</span>
+            <span class="tag">REST APIs</span>
             <span class="tag">Streamlit</span>
             <span class="tag">Pandas</span>
             <span class="tag">NumPy</span>
             <span class="tag">Hugging Face Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up">
+          <div class="domain-header">
+            <div class="domain-icon"><i class="bi bi-shield-check"></i></div>
+            <h4 class="domain-title">LLM Evaluation & Responsible AI</h4>
+            <span class="domain-badge">Core</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">RAGAS</span>
+            <span class="tag tag-core">LLM-as-Judge</span>
+            <span class="tag tag-core">Guardrails</span>
+            <span class="tag tag-core">Hallucination Mitigation</span>
+            <span class="tag">Citation Verification</span>
+            <span class="tag">Content Moderation</span>
+            <span class="tag">EU AI Act</span>
+            <span class="tag">AI Governance</span>
+            <span class="tag">SHAP</span>
+            <span class="tag">LIME</span>
+          </div>
+        </div>
+
+        <div class="skill-domain" data-aos="fade-up" data-aos-delay="50">
+          <div class="domain-header">
+            <div class="domain-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4 class="domain-title">Engineering Practice</h4>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-core">CI/CD</span>
+            <span class="tag tag-core">Pytest</span>
+            <span class="tag">Observability</span>
+            <span class="tag">Drift Detection</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitLab</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Agile</span>
           </div>
         </div>
 
